@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/ADM-2020/Desktop/KITAPHANArrr/KITAPHANA</OriginalElement>
+  <nodes>
+    <node x="23.236111111111086" y="546.0">Student</node>
+    <node x="-122.0" y="1825.0">LibraryArchive</node>
+    <node x="268.25" y="987.0">Library</node>
+    <node x="-97.5" y="1988.0">Singleton</node>
+    <node x="1837.0555555555554" y="1011.0">LoggingLibraryDecorator</node>
+    <node x="914.4166666666665" y="1667.0">Main</node>
+    <node x="922.9227430555557" y="1108.0">Subscriber</node>
+    <node x="975.4227430555557" y="1366.0">Librarian</node>
+    <node x="1240.993923611111" y="710.5">LibraryDecorator</node>
+    <node x="-111.5" y="248.0">Observer</node>
+    <node x="493.92274305555554" y="1402.0">LibraryAdapter</node>
+    <node x="1227.4227430555557" y="1414.0">LibraryFactory</node>
+    <node x="1490.0555555555557" y="998.0">SecurityLibraryDecorator</node>
+    <node x="268.0" y="-14.0">INFO</node>
+    <node x="201.54166666666663" y="1643.0">LibraryCLI</node>
+    <node x="1171.743923611111" y="176.0">LibraryService</node>
+    <node x="1076.9227430555557" y="1084.0">Publisher</node>
+    <node x="356.75" y="101.0">Book</node>
+    <node x="305.8689236111111" y="681.0">ExternalServiceAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="LibraryDecorator" target="LibraryService" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="1330.993923611111" y="524.0" />
+      <point x="1335.243923611111" y="524.0" />
+      <point x="0.0" y="115.5" />
+    </edge>
+    <edge source="LibraryCLI" target="Book" relationship="TO_MANY">
+      <point x="-41.0" y="-68.5" />
+      <point x="242.54166666666663" y="1592.0" />
+      <point x="-14.388888888888914" y="1592.0" />
+      <point x="-14.388888888888914" y="514.0" />
+      <point x="164.875" y="514.0" />
+      <point x="164.875" y="504.0" />
+      <point x="423.75" y="504.0" />
+      <point x="-67.0" y="190.5" />
+    </edge>
+    <edge source="Library" target="ExternalServiceAdapter" relationship="TO_ONE">
+      <point x="-109.0" y="-152.5" />
+      <point x="322.75" y="945.0" />
+      <point x="389.2361111111111" y="945.0" />
+      <point x="389.2361111111111" y="935.0" />
+      <point x="396.8689236111111" y="935.0" />
+      <point x="-91.0" y="43.5" />
+    </edge>
+    <edge source="Student" target="Book" relationship="TO_MANY">
+      <point x="63.75" y="-178.5" />
+      <point x="214.4861111111111" y="514.0" />
+      <point x="164.875" y="514.0" />
+      <point x="164.875" y="504.0" />
+      <point x="423.75" y="504.0" />
+      <point x="-67.0" y="190.5" />
+    </edge>
+    <edge source="LoggingLibraryDecorator" target="LibraryDecorator" relationship="REALIZATION">
+      <point x="-81.75" y="-128.5" />
+      <point x="1918.8055555555554" y="965.0" />
+      <point x="1660.125" y="965.0" />
+      <point x="1660.125" y="955.0" />
+      <point x="1375.993923611111" y="955.0" />
+      <point x="45.0" y="14.0" />
+    </edge>
+    <edge source="Main" target="LoggingLibraryDecorator" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1582.0" />
+      <point x="2000.5555555555557" y="1582.0" />
+      <point x="0.0" y="128.5" />
+    </edge>
+    <edge source="LibraryFactory" target="SecurityLibraryDecorator" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="1462.4227430555557" y="1334.0" />
+      <point x="1653.5555555555557" y="1334.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="Main" target="Librarian" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1582.0" />
+      <point x="1091.4227430555557" y="1582.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="Main" target="Library" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1582.0" />
+      <point x="437.25" y="1582.0" />
+      <point x="437.25" y="1314.0" />
+      <point x="513.5" y="1314.0" />
+      <point x="81.75" y="152.5" />
+    </edge>
+    <edge source="LibraryCLI" target="Student" relationship="TO_MANY">
+      <point x="-41.0" y="-68.5" />
+      <point x="242.54166666666663" y="1592.0" />
+      <point x="86.98611111111109" y="1592.0" />
+      <point x="-63.75" y="178.5" />
+    </edge>
+    <edge source="LibraryCLI" target="LibraryAdapter" relationship="CREATE">
+      <point x="41.0" y="-68.5" />
+      <point x="324.54166666666663" y="1622.0" />
+      <point x="1750.6666666666665" y="1622.0" />
+      <point x="1750.6666666666665" y="1602.0" />
+      <point x="675.9227430555555" y="1602.0" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="Singleton" target="LibraryArchive" relationship="TO_ONE">
+      <point x="-41.0" y="-57.5" />
+      <point x="-56.5" y="1963.0" />
+      <point x="-68.75" y="1963.0" />
+      <point x="-53.25" y="56.5" />
+    </edge>
+    <edge source="LibraryCLI" target="LoggingLibraryDecorator" relationship="CREATE">
+      <point x="41.0" y="-68.5" />
+      <point x="324.54166666666663" y="1622.0" />
+      <point x="1750.6666666666665" y="1622.0" />
+      <point x="1750.6666666666665" y="1572.0" />
+      <point x="2005.5555555555557" y="1572.0" />
+      <point x="2005.5555555555557" y="1334.0" />
+      <point x="2000.5555555555557" y="1334.0" />
+      <point x="0.0" y="128.5" />
+    </edge>
+    <edge source="Library" target="LibraryService" relationship="REALIZATION">
+      <point x="109.0" y="-152.5" />
+      <point x="540.75" y="965.0" />
+      <point x="879.4227430555555" y="965.0" />
+      <point x="879.4227430555555" y="524.0" />
+      <point x="1226.243923611111" y="524.0" />
+      <point x="-109.0" y="115.5" />
+    </edge>
+    <edge source="Librarian" target="Book" relationship="TO_MANY">
+      <point x="-58.0" y="-92.5" />
+      <point x="1033.4227430555557" y="1344.0" />
+      <point x="989.9227430555557" y="1344.0" />
+      <point x="989.9227430555557" y="1334.0" />
+      <point x="758.1189236111111" y="1334.0" />
+      <point x="758.1189236111111" y="514.0" />
+      <point x="164.875" y="514.0" />
+      <point x="164.875" y="504.0" />
+      <point x="423.75" y="504.0" />
+      <point x="-67.0" y="190.5" />
+    </edge>
+    <edge source="Library" target="Book" relationship="CREATE">
+      <point x="0.0" y="-152.5" />
+      <point x="431.75" y="965.0" />
+      <point x="382.25" y="965.0" />
+      <point x="382.25" y="955.0" />
+      <point x="769.1189236111111" y="955.0" />
+      <point x="769.1189236111111" y="504.0" />
+      <point x="557.75" y="504.0" />
+      <point x="67.0" y="190.5" />
+    </edge>
+    <edge source="Librarian" target="Subscriber" relationship="TO_MANY">
+      <point x="-58.0" y="-92.5" />
+      <point x="1033.4227430555557" y="1344.0" />
+      <point x="989.9227430555557" y="1344.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="LibraryFactory" target="Library" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="1462.4227430555557" y="1324.0" />
+      <point x="437.25" y="1324.0" />
+      <point x="437.25" y="1314.0" />
+      <point x="513.5" y="1314.0" />
+      <point x="81.75" y="152.5" />
+    </edge>
+    <edge source="Librarian" target="Publisher" relationship="REALIZATION">
+      <point x="58.0" y="-92.5" />
+      <point x="1149.4227430555557" y="1344.0" />
+      <point x="1192.9227430555557" y="1344.0" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="Student" target="Observer" relationship="REALIZATION">
+      <point x="-63.75" y="-178.5" />
+      <point x="86.98611111111109" y="524.0" />
+      <point x="-74.5" y="524.0" />
+      <point x="-74.5" y="514.0" />
+      <point x="-27.0" y="514.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+    <edge source="Library" target="Student" relationship="CREATE">
+      <point x="0.0" y="-152.5" />
+      <point x="431.75" y="965.0" />
+      <point x="382.25" y="965.0" />
+      <point x="382.25" y="935.0" />
+      <point x="149.375" y="935.0" />
+      <point x="149.375" y="925.0" />
+      <point x="214.4861111111111" y="925.0" />
+      <point x="63.75" y="178.5" />
+    </edge>
+    <edge source="Main" target="Book" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1582.0" />
+      <point x="868.4227430555555" y="1582.0" />
+      <point x="868.4227430555555" y="524.0" />
+      <point x="769.1189236111111" y="524.0" />
+      <point x="769.1189236111111" y="504.0" />
+      <point x="557.75" y="504.0" />
+      <point x="67.0" y="190.5" />
+    </edge>
+    <edge source="Book" target="INFO" relationship="REALIZATION">
+      <point x="0.0" y="-190.5" />
+      <point x="490.75" y="75.0" />
+      <point x="324.0" y="75.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="LoggingLibraryDecorator" target="LibraryService" relationship="TO_ONE">
+      <point x="81.75" y="-128.5" />
+      <point x="2082.3055555555557" y="965.0" />
+      <point x="2044.875" y="965.0" />
+      <point x="2044.875" y="524.0" />
+      <point x="2039.875" y="524.0" />
+      <point x="2039.875" y="514.0" />
+      <point x="1444.243923611111" y="514.0" />
+      <point x="109.0" y="115.5" />
+    </edge>
+    <edge source="Main" target="Student" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1582.0" />
+      <point x="112.61892361111109" y="1582.0" />
+      <point x="112.61892361111109" y="965.0" />
+      <point x="149.375" y="965.0" />
+      <point x="149.375" y="925.0" />
+      <point x="214.4861111111111" y="925.0" />
+      <point x="63.75" y="178.5" />
+    </edge>
+    <edge source="Main" target="LibraryAdapter" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1612.0" />
+      <point x="675.9227430555555" y="1612.0" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="LibraryFactory" target="LoggingLibraryDecorator" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="1462.4227430555557" y="1344.0" />
+      <point x="2000.5555555555557" y="1344.0" />
+      <point x="0.0" y="128.5" />
+    </edge>
+    <edge source="LibraryCLI" target="LibraryDecorator" relationship="TO_ONE">
+      <point x="-41.0" y="-68.5" />
+      <point x="242.54166666666663" y="1592.0" />
+      <point x="912.4227430555557" y="1592.0" />
+      <point x="912.4227430555557" y="965.0" />
+      <point x="1285.993923611111" y="965.0" />
+      <point x="-45.0" y="14.0" />
+    </edge>
+    <edge source="Main" target="SecurityLibraryDecorator" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1582.0" />
+      <point x="1707.9227430555557" y="1582.0" />
+      <point x="1707.9227430555557" y="1324.0" />
+      <point x="1653.5555555555557" y="1324.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="LibraryCLI" target="Library" relationship="CREATE">
+      <point x="41.0" y="-68.5" />
+      <point x="324.54166666666663" y="1622.0" />
+      <point x="1750.6666666666665" y="1622.0" />
+      <point x="1750.6666666666665" y="1572.0" />
+      <point x="437.2500000000001" y="1572.0" />
+      <point x="437.25" y="1314.0" />
+      <point x="513.5" y="1314.0" />
+      <point x="81.75" y="152.5" />
+    </edge>
+    <edge source="LibraryAdapter" target="ExternalServiceAdapter" relationship="REALIZATION">
+      <point x="0.0" y="-56.5" />
+      <point x="675.9227430555555" y="945.0" />
+      <point x="578.8689236111111" y="945.0" />
+      <point x="91.0" y="43.5" />
+    </edge>
+    <edge source="Main" target="LibraryFactory" relationship="CREATE">
+      <point x="0.0" y="-44.5" />
+      <point x="996.4166666666665" y="1582.0" />
+      <point x="1462.4227430555557" y="1582.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="LibraryCLI" target="ExternalServiceAdapter" relationship="TO_ONE">
+      <point x="-41.0" y="-68.5" />
+      <point x="242.54166666666663" y="1592.0" />
+      <point x="257.75" y="1592.0" />
+      <point x="257.75" y="945.0" />
+      <point x="389.2361111111111" y="945.0" />
+      <point x="389.2361111111111" y="935.0" />
+      <point x="396.8689236111111" y="935.0" />
+      <point x="-91.0" y="43.5" />
+    </edge>
+    <edge source="Singleton" target="LibraryArchive" relationship="CREATE">
+      <point x="41.0" y="-57.5" />
+      <point x="25.5" y="1963.0" />
+      <point x="37.75" y="1963.0" />
+      <point x="53.25" y="56.5" />
+    </edge>
+    <edge source="LibraryCLI" target="SecurityLibraryDecorator" relationship="CREATE">
+      <point x="41.0" y="-68.5" />
+      <point x="324.54166666666663" y="1622.0" />
+      <point x="1750.6666666666665" y="1622.0" />
+      <point x="1750.6666666666665" y="1572.0" />
+      <point x="1784.986111111111" y="1572.0" />
+      <point x="1784.986111111111" y="1324.0" />
+      <point x="1653.5555555555557" y="1324.0" />
+      <point x="0.0" y="141.5" />
+    </edge>
+    <edge source="SecurityLibraryDecorator" target="LibraryDecorator" relationship="REALIZATION">
+      <point x="-81.75" y="-141.5" />
+      <point x="1571.8055555555557" y="965.0" />
+      <point x="1660.125" y="965.0" />
+      <point x="1660.125" y="955.0" />
+      <point x="1375.993923611111" y="955.0" />
+      <point x="45.0" y="14.0" />
+    </edge>
+    <edge source="LibraryCLI" target="Library" relationship="TO_ONE">
+      <point x="-41.0" y="-68.5" />
+      <point x="242.54166666666663" y="1592.0" />
+      <point x="426.25" y="1592.0" />
+      <point x="426.25" y="1344.0" />
+      <point x="350.0" y="1344.0" />
+      <point x="-81.75" y="152.5" />
+    </edge>
+    <edge source="Student" target="INFO" relationship="REALIZATION">
+      <point x="-63.75" y="-178.5" />
+      <point x="86.98611111111109" y="524.0" />
+      <point x="-74.5" y="524.0" />
+      <point x="-74.5" y="514.0" />
+      <point x="-122.0" y="514.0" />
+      <point x="-122.0" y="75.0" />
+      <point x="324.0" y="75.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="SecurityLibraryDecorator" target="LibraryService" relationship="TO_ONE">
+      <point x="81.75" y="-141.5" />
+      <point x="1735.3055555555557" y="955.0" />
+      <point x="1806.4166666666665" y="955.0" />
+      <point x="1806.4166666666665" y="524.0" />
+      <point x="2039.875" y="524.0" />
+      <point x="2039.875" y="514.0" />
+      <point x="1444.243923611111" y="514.0" />
+      <point x="109.0" y="115.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.27187646233036966" showDependencies="true" x="1031.5" y="1054.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
