@@ -204,6 +204,6 @@ Adapting the design to accommodate future changes posed a challenge. The solutio
 - Develop a GUI to provide a more user-friendly and visually appealing interface for librarians and students to interact with the system.
 - Integrate a database to store persistent data, ensuring that information about books, students, and library activities is preserved across sessions.
 ##
-![Alt текст](111\KITAPHANA.png)
+![Alt текст](111/KITAPHANA.png)
 
 [References:](https://refactoring.guru/design-patterns/strategy)
